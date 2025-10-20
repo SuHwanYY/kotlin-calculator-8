@@ -7,12 +7,8 @@ fun main() {
     val input = Console.readLine()
 
     val calculator = Calculator()
+    val result = calculator.add(input)
 
-    try {
-        val result = calculator.add(input)
-        println(result)
-    } catch (e: IllegalArgumentException) {
-        println("에러메시지 : " + e.message)
-    }
+    println("결과 : $result")
 
 }
